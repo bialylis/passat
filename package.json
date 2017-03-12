@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "cd webpack; webpack -p --config ./webpack.config.js --progress --display-error-details",
+    "heroku-postbuild": " webpack -p --config ./frontend/webpack.config.js --progress --display-error-details",
     "start": "./start.sh"
   },
   "dependencies": {
