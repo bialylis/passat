@@ -8,7 +8,7 @@
 
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "webpack",
+    "heroku-postbuild": "webpack -p --config ./frontend/webpack.prod.config.js --progress",
     "start": "node index.js"
   },
   "dependencies": {
