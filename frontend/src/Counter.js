@@ -1,5 +1,5 @@
 import React from 'react';
- 
+import './firstStyles.scss';
 /**
  * A counter button: tap the button to increase the count.
  */
@@ -13,6 +13,8 @@ class Counter extends React.Component {
  
   render() {
     return (
+      <div>
+      First Test
       <button
         onClick={() => {
           this.setState({ count: this.state.count + 1 });
@@ -20,6 +22,7 @@ class Counter extends React.Component {
       >
         Count: {this.state.count}
       </button>
+      </div>
     );
   }
 }
