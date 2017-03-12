@@ -4,7 +4,7 @@ Pass@ (passat) - Open Source Team Password Manager
 
 ## Running Locally
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+Make sure you have [Node.js](http://nodejs.org/) installed.
 
 ```sh
 $ git clone https://github.com/bialylis/passat # or clone your own fork
