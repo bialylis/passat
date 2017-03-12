@@ -4,6 +4,8 @@ const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
 const app = express();
  
+app.set('port', (process.env.PORT || 5000));
+
 const compiler = webpack(webpackConfig);
  
 app.use(express.static(__dirname + '/www'));
