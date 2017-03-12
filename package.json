@@ -1,26 +1,28 @@
 {
-  "name": "node-js-getting-started",
+  "name": "passat",
   "version": "0.2.5",
-  "description": "A sample Node.js app using Express 4",
+  "description": "An open source password manager",
   "engines": {
     "node": "5.9.1"
   },
+
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
+    "pg": "4.x",
     "ejs": "2.4.1",
     "express": "4.13.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/bialylis/passat"
   },
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "team",
+    "password",
+    "manager"
   ],
-  "license": "MIT"
+  "license": "GNU"
 }
