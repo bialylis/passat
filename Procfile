@@ -1,1 +1,1 @@
-web: sh start.sh
+web: node frontend/server.js
