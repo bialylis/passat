@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "heroku-postbuild": "webpack -p --config ./frontend/webpack.config.js --progress",
-    "start": "node index.js"
+    // "start": "node index.js"
   },
   "dependencies": {
     "pg": "4.x",
