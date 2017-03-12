@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "webpack",
+    "heroku-postbuild": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
