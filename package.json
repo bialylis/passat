@@ -8,6 +8,7 @@
 
   "main": "index.js",
   "scripts": {
+    "heroku-postbuild": "webpack",
     "start": "node index.js"
   },
   "dependencies": {
