@@ -1,6 +1,7 @@
 # passat
 Pass@ (passat) - Open Source Team Password Manager
 
+[Deployed](https://passat.herokuapp.com/)
 
 ## Running Locally
 
