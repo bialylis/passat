@@ -24,6 +24,7 @@ store.dispatch({ type: 'INCREMENT' });
 store.dispatch({ type: 'INCREMENT' });
 store.dispatch({ type: 'DECREMENT' });
 
+
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
     React.createElement(Counter),
