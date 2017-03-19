@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors');
 var app = express();
 
 app.set('port', 5001);
@@ -9,6 +10,10 @@ app.use(express.static(__dirname + '/backend/public'));
 app.set('views', __dirname + '/backend/views');
 app.set('view engine', 'ejs');
 
+var corsOptions = {
+  origin: ['http://localhost:5000', 'https://localhost:5000'],
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 
 function testJson(response) {
   console.log("Request handler random was called.");
@@ -23,7 +28,7 @@ function testJson(response) {
   response.end(json);
 }
 
-app.get('/test', function(request, response) {
+app.get('/test', cors(corsOptions), function(request, response) {
   testJson(response)
 });
 

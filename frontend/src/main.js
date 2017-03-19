@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './Counter';
+import Counter from './Counter.jsx';
  
 function counter(state = 0, action) {
   switch (action.type) {
