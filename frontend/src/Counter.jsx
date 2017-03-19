@@ -26,7 +26,7 @@ class Counter extends React.Component {
       </button>
       <button
         onClick={() => {
-          fetch('http://localhost:5001/test', {
+          fetch('https://passat.herokuapp.com:5001/test', {
             method: 'GET',
             headers: {
               Accept: 'application/json',
