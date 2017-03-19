@@ -11,7 +11,7 @@ app.set('views', __dirname + '/backend/views');
 app.set('view engine', 'ejs');
 
 var corsOptions = {
-  origin: ['http://localhost:5000', 'https://localhost:5000'],
+  origin: ['http://localhost:5000', 'https://localhost:5000', 'https://passat.herokuapp.com'],
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
