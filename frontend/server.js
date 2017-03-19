@@ -27,24 +27,4 @@ const server = app.use('/api', function (req, res, next){
   const host = server.address().address;
   const port = server.address().port;
   console.log('Example app listening at http://%s:%s', host, port);
-
-
-
-  var url = 'http://localhost:5001/test';
-
-  http.get(url, function(res){
-      var body = '';
-
-      res.on('data', function(chunk){
-          body += chunk;
-      });
-
-      res.on('end', function(){
-          var fbResponse = JSON.parse(body);
-          console.log("Got a response: ", body);
-      });
-  }).on('error', function(e){
-        console.log("Got an error: ", e);
-  });
-
 });
