@@ -28,7 +28,7 @@ function testJson(response) {
   response.end(json);
 }
 
-app.get('/test', cors(corsOptions), function(request, response) {
+app.get('/test', cors(), function(request, response) {
   testJson(response)
 });
 
